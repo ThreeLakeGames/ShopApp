@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import './screens/product_detail_screen.dart';
 import './screens/products_overview.dart';
 import './screens/cart_screen.dart';
+import './screens/orders_screen.dart';
 
 import './providers/products.dart';
 import './providers/cart.dart';
@@ -41,22 +42,23 @@ class MyApp extends StatelessWidget {
         routes: {
           ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
           CartScreen.routeName: (ctx) => CartScreen(),
+          OrdersScreen.routeName: (ctx) => OrdersScreen(),
         },
       ),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("MyShop"),
-      ),
-      body: Center(
-        child: Text("Shop is under construction"),
-      ),
-    );
-  }
-}
+// class MyHomePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text("MyShop"),
+//       ),
+//       body: Center(
+//         child: Text("Shop is under construction"),
+//       ),
+//     );
+//   }
+// }
